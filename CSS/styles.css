@@ -1,14 +1,17 @@
 :root {
 	--text-color: #e9e5d4e5;
 	--text-color-h2: rgb(209, 136, 0);
+	--text-color-h3: red;
 
 	--hover_text-color: orange;
 	--hover_bg-color: aliceblue;
 
 	--bg-color: aliceblue;
 	--bg-color2: black;
-	--bg-color-section: rgba(89, 85, 85, 0.33);
+	--bg-color-section: rgba(130, 129, 129, 0.65);
 	--bg-color-intern: #fef7f3;
+
+	--border-color: rgb(220, 220, 220);
 }
 
 body {
@@ -20,7 +23,11 @@ body {
 }
 /* ! ------- MAIN ------- */
 main {
-	background-color: var(--bg-color);
+	/* background-color: var(--bg-color); */
+	background-image: url(../IMG/bg-space4.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 	height: 100%;
 	width: 100%;
 	display: block;
@@ -36,6 +43,7 @@ footer {
 	text-align: center;
 	position: absolute;
 	bottom: 0;
+	border-top: 2px solid var(--border-color);
 }
 
 .footer__copyright {
@@ -55,6 +63,7 @@ header {
 	top: 0;
 	z-index: 99;
 	box-sizing: border-box;
+	border-bottom: 2px solid var(--border-color);
 }
 
 .header__left-side {
@@ -87,14 +96,12 @@ header {
 	color: var(--text-color);
 	padding: 1rem 0.5rem;
 	text-align: center;
-	border-radius: 30px;
-	transition: ease-in-out 0.5s;
+	border-bottom: 2px solid transparent;
 }
 
 .header__nav-list a:hover {
-	background-color: var(--hover_bg-color);
+	border-bottom: 2px solid var(--hover_text-color);
 	color: var(--hover_text-color);
-	border-radius: 30px;
 }
 
 /* ! ------- MAIN INDEX ------- */
@@ -116,6 +123,8 @@ header {
 	transition: width 0.3s ease;
 	overflow: hidden;
 	border-radius: 0 15px 15px 0;
+	border: 2px solid var(--border-color);
+	border-left: none;
 }
 
 .index__main__nav-list:hover {
@@ -123,7 +132,7 @@ header {
 }
 
 .main__nav-list {
-	color: aliceblue;
+	color: var(--text-color);
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -172,6 +181,7 @@ header {
 /* ! ------- SECTION WEATHER ------- */
 .container__section__weather {
 	text-align: center;
+	color: var(--text-color);
 }
 
 #cont_Mjk5NTIwNnw1fDJ8MXw0fCNmZmZmZmZ8MXwjZmZmZmZmfGd8 {
@@ -262,5 +272,46 @@ header {
 }
 
 .article__playlists__category p {
-    text-shadow: 1px 1px 2px black;
+	text-shadow: 1px 1px 2px black;
+}
+
+/* ! ------- SECTION FAVORIS ------- */
+
+.container__section__favorite {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	width: 100%;
+	justify-content: center;
+}
+
+.section__favorite__article {
+	display: flex;
+	flex-direction: column;
+	width: 25%;
+	box-shadow: 5px 5px 10px black;
+	border-radius: 10px;
+	background-color: var(--text-color);
+	padding: 1rem;
+}
+
+.section__favorite__article h3 {
+	color: var(--text-color-h3);
+	font-weight: 600;
+	padding-bottom: 0.5rem;
+	text-align: center;
+}
+
+.section__favorite__article a {
+	margin: 0.2rem auto;
+	width: 60%;
+	color: var(--bg-color2);
+	border-bottom: 2px solid transparent;
+	text-align: center;
+}
+
+.section__favorite__article a:hover {
+	border-bottom: 2px solid var(--text-color-h3);
+	color: var(--text-color-h3);
+	cursor: crosshair;
 }
