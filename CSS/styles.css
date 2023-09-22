@@ -288,6 +288,7 @@ header {
 .section__favorite__article {
 	display: flex;
 	flex-direction: column;
+    justify-content: space-around;
 	width: 25%;
 	box-shadow: 5px 5px 10px black;
 	border-radius: 10px;
@@ -304,14 +305,16 @@ header {
 
 .section__favorite__article a {
 	margin: 0.2rem auto;
+    padding: 0 0.5rem;
 	width: 60%;
 	color: var(--bg-color2);
-	border-bottom: 2px solid transparent;
+	border: 2px solid transparent;
 	text-align: center;
 }
 
 .section__favorite__article a:hover {
-	border-bottom: 2px solid var(--text-color-h3);
+	border: 2px solid var(--text-color-h3);
+    border-radius: 10px;
 	color: var(--text-color-h3);
 	cursor: crosshair;
 }
