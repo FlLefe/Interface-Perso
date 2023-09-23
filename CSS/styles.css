@@ -24,7 +24,7 @@ body {
 /* ! ------- MAIN ------- */
 main {
 	/* background-color: var(--bg-color); */
-	background-image: url(../IMG/bg-space4.jpg);
+	background-image: url(../IMG/bg-space2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -57,7 +57,7 @@ footer {
 header {
 	display: flex;
 	align-items: center;
-	padding: 1.5rem;
+	padding: 1rem;
 	background-color: var(--bg-color2);
 	position: sticky;
 	top: 0;
@@ -74,7 +74,7 @@ header {
 }
 
 .header__img {
-	width: 70px;
+	width: 60px;
 	border-radius: 50%;
 	border: 2px solid lightgrey;
 }
@@ -164,7 +164,7 @@ header {
 .container {
 	width: 65%;
 	margin: 0 auto 3rem;
-	padding: 2rem;
+	padding:3rem 2rem;
 	background-color: var(--bg-color-section);
 	border-radius: 15px;
 }
