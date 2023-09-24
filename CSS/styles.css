@@ -318,3 +318,16 @@ header {
 	color: var(--text-color-h3);
 	cursor: crosshair;
 }
+
+
+/* ! ------- PAGE CV ------- */
+
+.cv__main__container{
+	width: 60%;
+	padding: 2rem;
+	margin: 0 auto;
+	background-color: aliceblue;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
